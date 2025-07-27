@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+}
+
+/* Component styles */
+@layer components {
+  /* ...your component styles... */
+}
+
+/* Theme definition */
+@theme {
+  --font-family-sans: var(--font-ubuntu), Ubuntu, ui-sans-serif, system-ui,
+    sans-serif;
+
+  --color-primary: #05386b;
+  --color-secondary: #edf5e1;
+
+  --color-accent-100: #5cdb95;
+  --color-accent-200: #2b7969;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  --animation-fade-in: fadeIn 0.5s ease-in-out;
+  --animation-slide-up: slideUp 0.5s ease-out;
+  --animation-bounce-slow: bounce 2s infinite;
+}
