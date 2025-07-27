@@ -6,12 +6,12 @@ const Footer = () => {
           <h3>
             Build with &nbsp;
             <a
-              href='https://nextjs.org/'
+              href='https://react.dev/'
               className='text-accent-200 hover:text-accent-100'
               target='_blank'
               rel='noopener noreferrer'
             >
-              NextJS
+              React
             </a>
             &nbsp; and &nbsp;
             <a
